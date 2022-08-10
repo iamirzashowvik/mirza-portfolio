@@ -52,7 +52,7 @@ const Resume = () => {
           <h5 className="my-3 text-2xl font-bold">Languages & Frameworks</h5>
           <div>
             {languages.map((language) => (
-              <Bar data={language} key={language.name} />
+              <Bar value={language} key={language.name} />
             ))}
           </div>
         </div>
@@ -60,7 +60,7 @@ const Resume = () => {
           <h5 className="my-3 text-2xl font-bold">others Technologies</h5>
           <div>
             {tools.map((language) => (
-              <Bar data={language} key={language.name} />
+              <Bar value={language} key={language.name} />
             ))}
           </div>
         </div>

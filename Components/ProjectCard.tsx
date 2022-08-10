@@ -39,9 +39,9 @@ const ProjectCard: FunctionComponent<{ project: IProject }> = ({
             <Image
               src={image_path}
               alt={name}
-              // height={200}
-              // width={200}
-              // layout="fill"
+              height={150}
+              width={200}
+              layout="responsive"
             />
             <div className="flex justify-center my-4 space-x-3">
               <a
