@@ -15,7 +15,6 @@ import {
 } from 'react-icons/si'
 import { IService, ISkill, IProject, Category } from './type'
 import { SiFlutter } from 'react-icons/si'
-import { Like } from 'typeorm'
 
 export const services: IService[] = [
   {
@@ -137,6 +136,6 @@ export const projects: IProject[] = [
       'https://play.google.com/store/apps/details?id=app.petspital.user',
     github_url: 'https://github.com/iamirzashowvik',
     category: ['flutter'],
-    key_tags: ['GETX', 'MVC', 'Agora.io'],
+    key_tags: ['GETX', 'MVC', 'Agora.io', 'Telemedicine'],
   },
 ]
