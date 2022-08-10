@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillFacebook, AiFillLinkedin } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { GiTie } from 'react-icons/gi'
 import { useTheme } from 'next-themes'
-
+import Image from 'next/image'
 const Sidebar = () => {
   const { theme, setTheme } = useTheme()
   const changeTheme = () => {
@@ -11,10 +11,12 @@ const Sidebar = () => {
   }
   return (
     <div>
-      <img
+      <Image
         src="https://i.pinimg.com/564x/ef/74/d6/ef74d669f28a82e09d6bee61d1f03aef.jpg"
         alt="user avater"
         className="w-32 h-32 mx-auto rounded-full"
+        height="200px"
+        width="200px"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kausan">
         <span className="text-green">Mirza</span> Showvik

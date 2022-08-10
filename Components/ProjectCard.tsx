@@ -3,7 +3,7 @@ import { IProject } from '../type'
 import { SiGithub, SiLivechat } from 'react-icons/si'
 import { CgMediaLive } from 'react-icons/cg'
 import { MdClose } from 'react-icons/md'
-
+import Image from 'next/image'
 const ProjectCard: FunctionComponent<{ project: IProject }> = ({
   project: {
     name,
@@ -23,13 +23,26 @@ const ProjectCard: FunctionComponent<{ project: IProject }> = ({
     <div className="overflow-hidden bg-gray-200 rounded-2xl dark:bg-dark-300">
       {state ? (
         <div onClick={changeState} className="">
-          <img src={image_path} alt={name} />
+          <Image
+            src={image_path}
+            alt={name}
+            height="150px"
+            width="200px"
+            layout="responsive"
+            objectFit="fill"
+          />
           <div className="flex justify-center">{name}</div>
         </div>
       ) : (
         <div className="absolute top-0 left-0 z-10 grid w-full h-auto px-4 py-4 text-black bg-gray-100 rounded-xl md:grid-cols-2 dark:bg-dark-100">
           <div>
-            <img src={image_path} alt={name} />
+            <Image
+              src={image_path}
+              alt={name}
+              // height={200}
+              // width={200}
+              // layout="fill"
+            />
             <div className="flex justify-center my-4 space-x-3">
               <a
                 href={github_url}
